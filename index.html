@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Vue Mastery</title>
+		<!-- Import Styles -->
+		<link rel="stylesheet" href="./assets/styles.css" />
+	</head>
+	<body>
+		<div id="app">
+			<div class="navbar"></div>
+
+			<div class="cart">Cart(<span id="cartCount">0</span>)</div>
+
+			<div class="product-display">
+				<div class="product-container">
+					<div class="product-image">
+						<img
+							id="productImage"
+							class="out-of-stock-img"
+							src="./assets/images/socks_blue.jpg"
+						/>
+					</div>
+					<div class="product-info">
+						<h1 id="productName">Socks</h1>
+						<p id="stockStatus">Out of Stock</p>
+						<ul id="productDetails">
+							<li>50% cotton</li>
+							<li>30% wool</li>
+							<li>20% polyester</li>
+						</ul>
+
+						<div class="color-circles">
+							<div class="color-circle green"></div>
+							<div class="color-circle blue"></div>
+						</div>
+
+						<button id="addToCartBtn" class="button disabledButton" disabled>
+							Add to Cart
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Import App -->
+		<script src="./src/product.js"></script>
+	</body>
+</html>
